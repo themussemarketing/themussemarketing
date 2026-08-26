@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "You’re in | The Musse",
+  title: "You’re in | The Musse Marketing",
   description:
     "Your details are with Anna. Book your 30-minute call to lock in your first 1:1 session.",
   robots: { index: false, follow: false },
@@ -17,7 +17,7 @@ export default function ThankYouPage() {
         <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-6 px-5 py-5 sm:px-8 lg:px-12">
           <a href="/" className="min-w-0">
             <p className="font-serif text-[1.65rem] leading-none tracking-[-0.03em] text-ink">
-              The Musse
+              The Musse Marketing
             </p>
             <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.28em] text-sage">
               with Anna Espina
@@ -41,7 +41,7 @@ export default function ThankYouPage() {
             Choose a time with Anna
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-center font-light leading-7 text-foreground/70">
-            30 minutes. No pressure — just a clear look at your marketing and
+            30 minutes. No pressure, just a clear look at your marketing and
             whether the intensive is the right next step.
           </p>
 

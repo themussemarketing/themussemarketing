@@ -15,9 +15,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "4-Week Marketing Intensive | The Musse",
+  title: "4-Week Marketing Intensive | The Musse Marketing",
   description:
-    "Run your own marketing and get consistent clients as a female founder. Four personalised 1:1 sessions with Anna Espina — messaging, content, ads, and conversion systems.",
+    "Run your own marketing and get consistent clients as a female founder. Four personalised 1:1 sessions with Anna Espina: messaging, content, ads, and conversion systems.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
