@@ -148,8 +148,8 @@ export default function Home() {
       <header className="relative z-50 border-b border-black/[0.06] bg-paper">
         <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-6 px-5 py-3 sm:px-8 lg:px-12">
           <a href="#top" className="min-w-0">
-            <p className="font-serif text-[1.65rem] leading-none tracking-[-0.03em] text-ink">
-              The Musse Marketing
+            <p className="font-serif text-[1.45rem] leading-none tracking-[-0.03em] text-ink sm:text-[1.65rem]">
+              The Musse Marketing School
             </p>
             <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.28em] text-sage">
               with Anna Espina
@@ -177,9 +177,9 @@ export default function Home() {
             </a>
             <a
               href="#book"
-              className="inline-flex rounded-full bg-terracotta px-5 py-2.5 text-[13px] font-medium text-white transition hover:bg-[#864640]"
+              className="inline-flex max-w-[11.5rem] items-center justify-center rounded-full bg-terracotta px-3 py-2 text-center text-[10px] font-medium leading-tight tracking-[0.08em] text-white transition hover:bg-[#864640] sm:max-w-none sm:px-5 sm:text-[11px]"
             >
-              Save your spot
+              APPLY FOR A FREE STRATEGY CALL
             </a>
           </div>
         </div>
@@ -192,13 +192,18 @@ export default function Home() {
               4-week 1:1 marketing intensive
             </p>
             <h1 className="mt-3 font-serif text-[2.15rem] leading-[1.08] tracking-[-0.03em] text-ink lg:text-[2.45rem] xl:text-[2.85rem]">
-              Run your own marketing. Get consistent clients.
+              Stop guessing with your marketing. Build a system that brings you
+              clients.
             </h1>
             <p className="mt-3 text-[0.95rem] font-light leading-6 text-foreground/75 lg:text-base lg:leading-7">
-              Hi, I&apos;m Anna. Four personalised sessions where I teach you
-              messaging, content, ads and systems, so you can attract clients
-              without an expensive agency. This is the exact system I used to
-              build a six-figure business in under a year, 14,000km from home.
+              Hi, I&apos;m Anna. In four weeks and four private sessions,
+              I&apos;ll teach you the messaging, content, ads and systems you
+              need to attract clients, without paying thousands every month to
+              an agency.
+            </p>
+            <p className="mt-3 text-[0.95rem] font-light leading-6 text-foreground/75 lg:text-base lg:leading-7">
+              It&apos;s the same approach I used to build a six-figure business
+              in under a year, 14,000 km from home.
             </p>
             <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-[11px] uppercase tracking-[0.18em] text-sage">
               <span>1:1 with Anna</span>
@@ -313,7 +318,7 @@ export default function Home() {
                 what applies to you. No information overload.
               </p>
               <div className="mt-6 rounded-[1.5rem] border border-black/[0.05] bg-cream p-5">
-                <LeadForm heading="Get the free resource" id="compare-form" compact />
+                <LeadForm id="compare-form" compact />
               </div>
             </SplitCopy>
           </Reveal>
@@ -462,7 +467,7 @@ export default function Home() {
                 level, with Anna in the room, not a replay.
               </p>
               <div className="mt-6 rounded-[1.5rem] bg-paper p-5">
-                <LeadForm heading="Start today" id="cta-form" compact />
+                <LeadForm id="cta-form" compact />
               </div>
             </SplitCopy>
           </Reveal>
@@ -470,7 +475,7 @@ export default function Home() {
       </main>
 
       <footer className="bg-paper py-8 text-center text-sm text-foreground/50">
-        © {new Date().getFullYear()} The Musse Marketing · Anna Espina
+        © {new Date().getFullYear()} The Musse Marketing School · Anna Espina
       </footer>
     </div>
   );

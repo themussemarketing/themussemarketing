@@ -9,6 +9,7 @@ type LeadFormProps = {
 };
 
 const JOTFORM_ID = "262322428121042";
+const APPLY_CTA = "APPLY FOR A FREE STRATEGY CALL";
 
 const fieldClass = (isDark: boolean, compact: boolean) =>
   `${compact ? "h-10" : "h-12"} w-full rounded-full border px-5 text-sm outline-none transition placeholder:opacity-50 focus:ring-2 focus:ring-terracotta/35 ${
@@ -18,8 +19,8 @@ const fieldClass = (isDark: boolean, compact: boolean) =>
   }`;
 
 export default function LeadForm({
-  heading = "Save your spot",
-  buttonLabel = "Book a call with me",
+  heading = APPLY_CTA,
+  buttonLabel = APPLY_CTA,
   variant = "light",
   id,
   compact = false,
@@ -63,7 +64,7 @@ export default function LeadForm({
 
         {heading ? (
           <p
-            className={`font-serif leading-snug ${compact ? "text-xl" : "text-2xl"} ${isDark ? "text-white" : "text-foreground"}`}
+            className={`font-serif leading-snug tracking-[0.04em] ${compact ? "text-sm" : "text-lg"} ${isDark ? "text-white" : "text-foreground"}`}
           >
             {heading}
           </p>
@@ -126,7 +127,7 @@ export default function LeadForm({
 
         <button
           type="submit"
-          className={`${compact ? "mt-0.5 h-10" : "mt-1 h-12"} rounded-full bg-terracotta px-6 text-sm font-medium tracking-[0.04em] text-white transition hover:bg-[#864640]`}
+          className={`${compact ? "mt-0.5 min-h-10 py-2 text-[11px]" : "mt-1 min-h-12 py-2.5 text-xs"} rounded-full bg-terracotta px-4 font-medium tracking-[0.08em] text-white transition hover:bg-[#864640] sm:px-6`}
         >
           {buttonLabel}
         </button>
