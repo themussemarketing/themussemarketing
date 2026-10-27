@@ -9,53 +9,50 @@ import VideoGallery from "./components/VideoGallery";
 const weeks = [
   {
     week: "01",
-    title: "Messaging & Offer",
-    copy: "We clarify your positioning, offer and what actually makes people buy.",
+    title: "Brand Positioning & Strategy",
+    copy: "Make your brand the obvious choice. We'll get clear on who you're selling to, what makes your brand different and how to communicate your value in a way that attracts the right customers.",
   },
   {
     week: "02",
-    title: "Organic, Paid Content & AI",
-    copy: "We define what to say, what to post, and how to attract the right audience.",
+    title: "Content Strategy & AI",
+    copy: "Create content that does more than look good. Learn how to create content that builds trust, attracts your ideal audience and supports sales, while using AI to simplify your marketing and save time.",
   },
   {
     week: "03",
-    title: "Ads, simplified",
-    copy: "We break down Meta ads so you can start generating leads without wasting money.",
+    title: "Paid Ads & Customer Acquisition",
+    copy: "Get your brand in front of the right people. Learn how to approach Meta Ads strategically, whether you're looking to generate eCommerce sales, attract qualified leads or reach new customers.",
   },
   {
     week: "04",
-    title: "Conversion system",
-    copy: "We set up your funnel, landing and CTAs so you can turn leads into clients.",
+    title: "Conversion & Growth",
+    copy: "Turn attention into revenue. We'll look at your website, customer journey, sales funnel and marketing performance to identify opportunities to improve conversions and create a plan for sustainable growth.",
   },
 ];
 
 const fit = [
-  "You’re a service-based or personal brand business ready to grow with strategy, not guesswork",
-  "You’re in industries like marketing, coaching, creative services, or other purpose-driven businesses",
-  "You’re already making revenue but want to scale in a more structured and aligned way",
-  "You want to refine your offer, messaging, and marketing so it actually converts",
-  "You’re ready to build a simple system to attract and close clients consistently",
+  "You've built a brand you believe in, but you're not seeing the growth you want.",
+  "You're working towards your first 6 figures or ready to scale beyond them.",
+  "You're spending time creating content without seeing consistent results.",
+  "You want to invest in paid advertising but don't know where to start.",
+  "You're already running ads but aren't getting the return you expected.",
+  "You want to use AI to make your marketing smarter and more efficient.",
+  "You're ready to stop guessing and start making more strategic marketing decisions.",
 ];
 
 const outcomes = [
-  "A clear offer and messaging that converts",
-  "A content system you actually understand",
-  "A simple way to generate leads (organic + ads)",
-  "A structure to consistently get clients",
+  "A stronger brand position. Know who you're targeting, what makes your brand different and how to communicate your value.",
+  "A content strategy with purpose. Understand what to create, where to show up and how your content contributes to growth.",
+  "A customer acquisition plan. Learn how to attract new customers through organic marketing and paid advertising.",
+  "A clearer path to conversion. Identify opportunities to improve your website, landing pages and customer journey.",
+  "The confidence to make better marketing decisions. Know where to focus your time, energy and budget.",
 ];
 
 const testimonials = [
   {
     quote:
-      "The Musse is a brilliant marketing agency. Anna has supported me with my social media strategy, content production and scheduling across both Instagram and LinkedIn with great success. Highly recommend.",
-    name: "Emma Fulu",
-    role: "Founder of Equality Institute of Melbourne",
-  },
-  {
-    quote:
-      "The Musse School is great! The people there are really nice and know what they’re doing. They helped me a lot with my online stuff. Highly recommend!",
-    name: "Maca Lopez",
-    role: "Sydney, Australia",
+      "Anna has helped me scale my salon based on the Gold Coast. I could not be happier with her help and support in growing my business.",
+    name: "Nicole Bonzani",
+    role: "Founder, Brondie Salon",
   },
   {
     quote:
@@ -65,15 +62,21 @@ const testimonials = [
   },
   {
     quote:
-      "Anna has helped me scale my salon based on the Gold Coast. I could not be happier with her help and support in growing my business.",
-    name: "Nicole Bonzani",
-    role: "Founder, Brondie Salon",
+      "The Musse is a brilliant marketing agency. Anna has supported me with my social media strategy, content production and scheduling across both Instagram and LinkedIn with great success. Highly recommend.",
+    name: "Emma Fulu",
+    role: "Founder of Equality Institute of Melbourne",
   },
   {
     quote:
       "Working with the Musse was a delight. They really understood my brand and made my vision a reality. I'm really happy with the end result and I hope to work with them again!",
     name: "Susan Blasco Stanger",
     role: "Solopreneur Lawyer",
+  },
+  {
+    quote:
+      "The Musse School is great! The people there are really nice and know what they’re doing. They helped me a lot with my online stuff. Highly recommend!",
+    name: "Maca Lopez",
+    role: "Sydney, Australia",
   },
 ];
 
@@ -149,7 +152,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-6 px-5 py-3 sm:px-8 lg:px-12">
           <a href="#top" className="min-w-0">
             <p className="font-serif text-[1.45rem] leading-none tracking-[-0.03em] text-ink sm:text-[1.65rem]">
-              The Musse Marketing School
+              The Musse School
             </p>
             <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.28em] text-sage">
               with Anna Espina
@@ -173,13 +176,13 @@ export default function Home() {
               href="#how-it-works"
               className="hidden rounded-full border border-black/10 px-4 py-2 text-[13px] font-medium text-ink/80 transition hover:border-black/20 hover:text-ink sm:inline-flex"
             >
-              The intensive
+              The method
             </a>
             <a
               href="#book"
               className="inline-flex max-w-[11.5rem] items-center justify-center rounded-full bg-terracotta px-3 py-2 text-center text-[10px] font-medium leading-tight tracking-[0.08em] text-white transition hover:bg-[#864640] sm:max-w-none sm:px-5 sm:text-[11px]"
             >
-              APPLY FOR A FREE STRATEGY CALL
+              BOOK YOUR FREE DISCOVERY CALL
             </a>
           </div>
         </div>
@@ -189,24 +192,26 @@ export default function Home() {
         <section className="grid lg:h-[calc(100svh-4.5rem)] lg:grid-cols-2 lg:overflow-hidden">
           <SplitCopy tone="cream" className="!min-h-0 py-10 lg:h-full lg:overflow-hidden lg:py-6 lg:px-10 xl:px-12">
             <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-sage">
-              4-week 1:1 marketing intensive
+              1:1 marketing mentorship for female founders
             </p>
             <h1 className="mt-3 font-serif text-[2.15rem] leading-[1.08] tracking-[-0.03em] text-ink lg:text-[2.45rem] xl:text-[2.85rem]">
-              Stop guessing with your marketing. Build a system that brings you
-              clients.
+              Build a brand you love. And a business that makes money.
             </h1>
             <p className="mt-3 text-[0.95rem] font-light leading-6 text-foreground/75 lg:text-base lg:leading-7">
-              Hi, I&apos;m Anna. In four weeks and four private sessions,
-              I&apos;ll teach you the messaging, content, ads and systems you
-              need to attract clients, without paying thousands every month to
-              an agency.
+              If you&apos;re a female founder in beauty, luxury or lifestyle,
+              this is for you. I built my marketing business from zero to 6
+              figures. No connections. No investors. Now I help ambitious female
+              founders do the same.
             </p>
             <p className="mt-3 text-[0.95rem] font-light leading-6 text-foreground/75 lg:text-base lg:leading-7">
-              It&apos;s the same approach I used to build a six-figure business
-              in under a year, 14,000 km from home.
+              Whether you&apos;re growing an eCommerce brand or a premium
+              service-based business, I&apos;ll help you attract the right
+              customers, generate more sales and build a marketing strategy that
+              actually drives revenue. Four weeks. Four private sessions. A
+              strategy built around your business.
             </p>
             <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-[11px] uppercase tracking-[0.18em] text-sage">
-              <span>1:1 with Anna</span>
+              <span>4 weeks</span>
               <span>4 private sessions</span>
               <span>Female founders</span>
             </div>
@@ -216,7 +221,7 @@ export default function Home() {
           </SplitCopy>
           <SplitPhoto
             src="/images/anna-hero.jpg"
-            alt="Anna Espina, business coach and founder of The Musse Marketing"
+            alt="Anna Espina, founder of The Musse School"
             position="center 30%"
             priority
             maxQuality
@@ -233,8 +238,22 @@ export default function Home() {
                   The method
                 </p>
                 <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-0.03em] text-ink sm:text-5xl">
-                  Four private workshops. Built around your business.
+                  Good marketing isn&apos;t about doing more. It&apos;s about
+                  doing what works.
                 </h2>
+                <p className="mt-5 font-light leading-7 text-foreground/70">
+                  You don&apos;t need to be everywhere, follow every trend or
+                  spend thousands on ads without knowing what you&apos;re doing.
+                  You need a clear strategy that connects your brand, your
+                  customers and your business goals.
+                </p>
+                <p className="mt-3 font-light leading-7 text-foreground/70">
+                  Over four weeks, we&apos;ll work together on the four pillars
+                  of marketing that help businesses grow. This isn&apos;t another
+                  pre-recorded course or generic business coaching program —
+                  it&apos;s personalised 1:1 mentorship with someone who works
+                  hands-on with brands every day.
+                </p>
               </div>
             </Reveal>
             <div className="mt-14 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
@@ -267,23 +286,31 @@ export default function Home() {
           <Reveal from="right" delay={120} className="h-full min-h-[420px] lg:min-h-0">
             <SplitCopy tone="sand">
               <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-clay">
-                Your consultant
+                About me
               </p>
               <h2 className="mt-3 font-serif text-4xl tracking-[-0.03em] text-ink lg:text-[2.75rem]">
-                Anna Espina
+                I built a 6-figure marketing business from scratch. Now I&apos;m
+                helping other women grow theirs.
               </h2>
               <p className="mt-2 text-sm uppercase tracking-[0.18em] text-clay">
-                Founder and part-time chief marketing officer
+                Hi, I&apos;m Anna. Marketing &amp; Growth Strategist
               </p>
               <p className="mt-6 font-light leading-7 text-foreground/80">
-                With over 10 years in marketing, strategy and business growth, I
-                have worked across agencies and brands in Australia and Europe,
-                seeing what actually drives results behind the scenes. I built my
-                own business from scratch, in a new country, with no contacts and
-                no shortcuts, and scaled it to six figures in under a year. Today
-                I help founders, freelancers and service-based businesses
-                simplify their marketing, attract better clients, and build
-                systems that generate consistent revenue.
+                I&apos;m a Fractional CMO and founder of The Musse Agency, with
+                over 10 years helping brands across Australia and Europe grow
+                through strategy, advertising and customer acquisition. When I
+                started my own marketing business, I didn&apos;t have an
+                established network, investors or a big team. Just my
+                experience, my laptop and the determination to make it work. I
+                built that business to six figures, working with brands I
+                genuinely love. Now, through The Musse School, I help female
+                founders build smarter marketing strategies, attract better
+                customers and grow businesses that are both profitable and
+                aligned with their vision.
+              </p>
+              <p className="mt-4 font-light leading-7 text-foreground/80">
+                Because your marketing should do more than make your brand look
+                successful. It should help your business become successful.
               </p>
             </SplitCopy>
           </Reveal>
@@ -293,32 +320,38 @@ export default function Home() {
           <Reveal from="right" className="h-full min-h-[420px] lg:order-2 lg:min-h-0">
             <SplitPhoto
               src="/images/for-you.png"
-              alt="Anna Espina, founder of The Musse Marketing"
+              alt="Anna Espina, founder of The Musse School"
               position="center 22%"
             />
           </Reveal>
           <Reveal from="left" delay={120} className="h-full min-h-[420px] lg:order-1 lg:min-h-0">
             <SplitCopy tone="paper">
               <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-sage">
-                4-week marketing intensive
+                Who it&apos;s for
               </p>
               <h2 className="mt-3 font-serif text-4xl leading-[1.1] tracking-[-0.03em] text-ink lg:text-[2.75rem]">
-                This vs other programs
+                For ambitious women building brands with purpose.
               </h2>
               <p className="mt-5 font-light leading-7 text-foreground/75">
-                If you&apos;ve been scrolling the internet, you&apos;ve
-                probably seen 27 different “business coaches”, 10-step
-                frameworks, “just post more content” advice, and courses that
-                leave you more confused than when you started.
+                The Musse School is designed for female founders in beauty,
+                luxury and lifestyle who want to grow through smarter marketing.
+                Beauty: skincare, cosmetics, haircare, salons. Luxury:
+                architecture, interiors, property, hospitality and premium
+                services. Lifestyle: homewares, self-care, eCommerce and
+                experience-led brands.
               </p>
               <p className="mt-3 font-light leading-7 text-foreground/75">
-                This isn&apos;t another course you watch and forget. It&apos;s
-                1:1, personalised to your business, and focused on actually
-                getting things done. No 100 people on a Zoom call. No guessing
-                what applies to you. No information overload.
+                Whether you&apos;re selling products online or offering premium
+                services, the goal is the same: attract the right customers and
+                turn your marketing into measurable business growth.
               </p>
               <div className="mt-6 rounded-[1.5rem] border border-black/[0.05] bg-cream p-5">
-                <LeadForm id="compare-form" compact />
+                <LeadForm
+                  id="compare-form"
+                  compact
+                  heading="LET'S TALK ABOUT YOUR BUSINESS"
+                  buttonLabel="LET'S TALK ABOUT YOUR BUSINESS"
+                />
               </div>
             </SplitCopy>
           </Reveal>
@@ -336,7 +369,7 @@ export default function Home() {
           <Reveal from="right" delay={120} className="h-full min-h-[420px] lg:min-h-0">
             <SplitCopy tone="cream">
               <h2 className="font-serif text-4xl tracking-[-0.03em] text-ink lg:text-[2.75rem]">
-                This is for you if...
+                You&apos;re in the right place if...
               </h2>
               <ul className="mt-7 space-y-3.5">
                 {fit.map((item) => (
@@ -346,6 +379,10 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-6 font-light leading-7 text-foreground/80">
+                You don&apos;t need to become a marketing expert. You need to
+                understand the marketing that grows your business.
+              </p>
             </SplitCopy>
           </Reveal>
         </section>
@@ -361,7 +398,7 @@ export default function Home() {
           <Reveal from="left" delay={120} className="h-full min-h-[420px] lg:order-1 lg:min-h-0">
             <SplitCopy tone="clay">
               <h2 className="font-serif text-4xl tracking-[-0.03em] text-cream lg:text-[2.75rem]">
-                By the end of the 4 weeks, you&apos;ll have:
+                Four weeks. A clearer strategy. More confidence to grow.
               </h2>
               <ul className="mt-7 space-y-3.5">
                 {outcomes.map((item) => (
@@ -386,14 +423,21 @@ export default function Home() {
           <Reveal from="right" delay={120} className="h-full min-h-[420px] lg:min-h-0">
             <SplitCopy tone="paper">
               <h2 className="font-serif text-4xl leading-tight tracking-[-0.03em] text-ink lg:text-[2.75rem]">
-                A deep dive into your business strategy
+                Think of me as your marketing strategist, for four weeks.
               </h2>
               <p className="mt-6 font-light leading-7 text-foreground/75">
-                This is not a generic coaching call. This is a personalised
-                4-session intensive where we work directly on your business, your
-                offer, your marketing, and your growth strategy. Each session is
-                tailored to your stage, your goals, and exactly what needs to
-                change to start attracting consistent clients.
+                Less guessing. More growing. Not another course to complete, and
+                not another collection of videos you&apos;ll never watch. Real
+                conversations. Real strategy. Real action. We&apos;ll work
+                directly on your business, reviewing what&apos;s working,
+                identifying what&apos;s holding you back and building a
+                marketing plan tailored to your goals.
+              </p>
+              <p className="mt-3 font-light leading-7 text-foreground/75">
+                Whether you&apos;re launching a new product, growing your
+                eCommerce sales or looking to attract more high-value clients,
+                we&apos;ll focus on the areas that matter most. Your brand. Your
+                goals. Your strategy.
               </p>
             </SplitCopy>
           </Reveal>
@@ -405,10 +449,10 @@ export default function Home() {
               <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-sage">
-                    Google Business reviews
+                    Real feedback from founders I&apos;ve worked with
                   </p>
                   <h2 className="mt-3 font-serif text-4xl tracking-[-0.03em] text-ink sm:text-5xl">
-                    What people are saying
+                    Don&apos;t just take my word for it.
                   </h2>
                 </div>
                 <a
@@ -459,12 +503,15 @@ export default function Home() {
           <Reveal from="left" delay={120} className="h-full min-h-[420px] lg:order-1 lg:min-h-0">
             <SplitCopy tone="sand">
               <h2 className="font-serif text-4xl leading-tight tracking-[-0.03em] text-ink lg:text-[2.75rem]">
-                Unlock your business potential today
+                Ready to make your marketing make money?
               </h2>
               <p className="mt-5 font-light leading-7 text-foreground/75">
-                Don&apos;t miss this exclusive opportunity to gain the
-                knowledge and strategy that will take your business to the next
-                level, with Anna in the room, not a replay.
+                You&apos;ve already put the work into building your brand. Now
+                it&apos;s time to build the strategy that helps it grow. If
+                you&apos;re a female founder in beauty, luxury or lifestyle and
+                you&apos;re ready to take your business to the next level,
+                I&apos;d love to hear from you. Let&apos;s talk about your
+                business, your goals and how we can get you closer to them.
               </p>
               <div className="mt-6 rounded-[1.5rem] bg-paper p-5">
                 <LeadForm id="cta-form" compact />
@@ -475,7 +522,7 @@ export default function Home() {
       </main>
 
       <footer className="bg-paper py-8 text-center text-sm text-foreground/50">
-        © {new Date().getFullYear()} The Musse Marketing School · Anna Espina
+        © {new Date().getFullYear()} The Musse School · Anna Espina
       </footer>
     </div>
   );

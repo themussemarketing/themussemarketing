@@ -9,7 +9,7 @@ type LeadFormProps = {
 };
 
 const JOTFORM_ID = "262322428121042";
-const APPLY_CTA = "APPLY FOR A FREE STRATEGY CALL";
+const APPLY_CTA = "BOOK YOUR FREE DISCOVERY CALL";
 
 const fieldClass = (isDark: boolean, compact: boolean) =>
   `${compact ? "h-10" : "h-12"} w-full rounded-full border px-5 text-sm outline-none transition placeholder:opacity-50 focus:ring-2 focus:ring-terracotta/35 ${
